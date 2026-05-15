@@ -9,5 +9,5 @@ int main(void)
 		printf("10進数 > ");
 		printf("%d\n\n",hexadecimal);
 	}
-	return (0);
+	return (0); // 返り値
 }

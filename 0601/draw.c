@@ -8,7 +8,7 @@ int main(void)
 
 	for (y = 0; y < r; y++) {
 		if (y % n == n - 1) continue;		// n行から１行を間引く
-		for (x = 0; x < r; x++) {
+		for (x = 0; x < r; x++) { // 列ループ
 			if (x > y) break;	// 斜め半分を切り落とす
 			printf("#");
 		}

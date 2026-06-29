@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int mul(int x, int y){
-    if (y == 0){
+    if (y == 0){ // *0のときは0を返す
         return 0;
     }
-    if (y > 0){
+    if (y > 0){ // yが正の整数のとき、再帰的に計算させる
         return mul(x, y - 1) + x;
     }
 }

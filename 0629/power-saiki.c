@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int power(int x, int y){
-    if (y == 0){ // 0乗のときは1を返す
+    if (y == 0){    // 0乗のときは1を返す
         return 1;
     }
-    if (y > 0){ // 正の整数乗のとき、再帰的に計算させる
+    if (y > 0){     // 正の整数乗のとき、再帰的に計算させる
         return x * power(x, y - 1);
     }
 }

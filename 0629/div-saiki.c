@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int div(int x, int y){
-    if (y == 0){ // 0で割るときは-1を返す
+    if (y == 0){    // 0で割るときは-1を返す
         return -1;
     }
-    if (x < y){ // xがyより小さいときは0を返す
+    if (x < y){     // xがyより小さいときは0を返す
         return 0;
     }
-    if (x >= y){ // xがy以上のとき、再帰的に計算させる
+    if (x >= y){     // xがy以上のとき、再帰的に計算させる
         return div(x - y, y) + 1;
     }
 }
